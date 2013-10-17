@@ -213,10 +213,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\ContactpageController.cs" />
+    <Compile Include="Controllers\ProductsApiController.cs" />
     <Compile Include="Controllers\SurfaceControllers\UserActionsController.cs" />
     <Compile Include="Controllers\TextpageController.cs" />
     <Compile Include="Controllers\FrontpageController.cs" />
-    <Compile Include="Controllers\WebapiController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -224,6 +224,7 @@
     <Compile Include="Models\ContactpageRenderModel.cs" />
     <Compile Include="Models\HelperModels\CreateReviewUserForm.cs" />
     <Compile Include="Models\HelperModels\NavigationItem.cs" />
+    <Compile Include="Models\HelperModels\Product.cs" />
     <Compile Include="Models\HelperModels\Slide.cs" />
     <Compile Include="Models\HelperModels\UmbracoImage.cs" />
     <Compile Include="Models\TextpageRenderModel.cs" />
