@@ -213,6 +213,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\ContactpageController.cs" />
+    <Compile Include="Controllers\SurfaceControllers\UserActionsController.cs" />
     <Compile Include="Controllers\TextpageController.cs" />
     <Compile Include="Controllers\FrontpageController.cs" />
     <Compile Include="Global.asax.cs">
