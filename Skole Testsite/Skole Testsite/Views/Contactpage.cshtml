@@ -3,14 +3,13 @@
     Layout = "Layout.cshtml";
 }
 <div class="ContactHead">
-<h2 style="background: url('/Content/Img/troll.jpg') no-repeat scroll 400px center transparent;
-    height: 164px;">Indtast venligst dine kontaktoplysninger her: </h2>
- </div>
+<h2>Indtast venligst dine kontaktoplysninger her:</h2>
+</div>  
 <div class ="ContactPage">
 <p>@Model.Navn</p>
    @Html.TextBox("TextboxName")
 <p>@Model.Adresse</p>
-    <input type="text" name="Adresse" size="40" maxlength="35" id="AdresseBox">
+    <input type="text" name="Adresse" size="40" maxlength="35">
 <p>@Model.Postnr</p> 
     <input type="text" name="Postnr" size="40" maxlength="35">
 <p>@Model.Fødselsdag</p>
@@ -20,6 +19,6 @@
 
 <br>
 <br>
-    <button type="button" name="Test1">Submit</button> <img class="Marioimage" src="/Content/Img/Mario.gif"/>
+    <button type="button" id="SubmitBtn" name="Test1">Submit</button> <img class="Marioimage" src="/Content/Img/Mario.gif"/>
 </div>
   

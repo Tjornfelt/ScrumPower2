@@ -1,16 +1,16 @@
-﻿img.troll {
-            vertical-align:text-bottom;
-           }
-img.Marioimage 
+﻿img.Marioimage 
            {
  	        width: 12em;
  	        height: 8em;
            }
 
 div.ContactHead 
-           {
+        h2 {
             text-shadow:1px 1px black;
             color: #780000;
+            line-height:200px;
+            background: transparent url('/Content/Img/troll.jpg') no-repeat scroll 600px 10px ;
+            background-size: 12em 8em;
            }
 
 div.ContactPage 
