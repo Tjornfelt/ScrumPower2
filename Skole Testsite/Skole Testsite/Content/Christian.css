@@ -1,2 +1,23 @@
-﻿body {
-}
+﻿img.troll {
+            vertical-align:text-bottom;
+           }
+img.Marioimage 
+           {
+ 	        width: 12em;
+ 	        height: 8em;
+           }
+
+div.ContactHead 
+           {
+            text-shadow:1px 1px black;
+            color: #780000;
+           }
+
+div.ContactPage 
+
+         p {
+            text-shadow:1px 1px black;
+            color: #780000;
+           }  
+
+

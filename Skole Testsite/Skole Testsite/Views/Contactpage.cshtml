@@ -2,18 +2,23 @@
 @{
     Layout = "Layout.cshtml";
 }
-
-<body>
-<h2>Indtast venligst dine kontaktoplysninger her:</h2>
-
+<div class="ContactHead">
+<h2>Indtast venligst dine kontaktoplysninger her:<img class="troll" src="/Content/Img/troll.jpg"/> </h2>
+ </div>
+<div class ="ContactPage">
 <p>@Model.Navn</p>
-<input type="text" name="Navn" size="40" maxlength="35">
+   @Html.TextBox("TextboxName")
 <p>@Model.Adresse</p>
-<input type="text" name="Adresse" size="40" maxlength="35">
+    <input type="text" name="Adresse" size="40" maxlength="35" id="AdresseBox">
 <p>@Model.Postnr</p> 
-<input type="text" name="Postnr" size="40" maxlength="35">
+    <input type="text" name="Postnr" size="40" maxlength="35">
 <p>@Model.Fødselsdag</p>
-<input type="text" name="Fødselsdag" size="40" maxlength="35">
+    <input type="text" name="Fødselsdag" size="40" maxlength="35">
 <p>@Model.Hårfarve</p>
-<input type="text" name="Hårfave" size="40" maxlength="35">
-</body>
+    <input type="text" name="Hårfave" size="40" maxlength="35"> 
+
+<br>
+<br>
+    <button type="button" name="Test1">Submit</button> <img class="Marioimage" src="/Content/Img/Mario.gif"/>
+</div>
+  

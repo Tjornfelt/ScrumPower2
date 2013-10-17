@@ -23,6 +23,11 @@ namespace Skole_Testsite.Controllers
             newModel.Postnr = model.Content.GetPropertyValue<string>("Postnr");
             newModel.Fødselsdag = model.Content.GetPropertyValue<string>("BirthDay");
             newModel.Hårfarve = model.Content.GetPropertyValue<string>("Haircolour");
+            newModel.TextboxName = model.Content.GetPropertyValue<string>("TextboxName");
+
+           
+            
+ 
             //Do some stuff here, then return the base method
             return View(newModel);
         }

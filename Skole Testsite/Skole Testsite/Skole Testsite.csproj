@@ -260,7 +260,10 @@
     <Content Include="bin\x86\sqlceme40.dll" />
     <Content Include="bin\x86\sqlceqp40.dll" />
     <Content Include="bin\x86\sqlcese40.dll" />
+    <Content Include="Content\Christian.css" />
     <Content Include="Content\Img\bullshit_logo.jpg" />
+    <Content Include="Content\Img\Mario.gif" />
+    <Content Include="Content\Img\Troll.jpg" />
     <Content Include="Content\Site.css" />
     <Content Include="css\dummy.txt" />
     <Content Include="default.aspx" />

@@ -14,7 +14,8 @@ namespace Skole_Testsite.Models
         public string Adresse { get; set; }
         public string Postnr { get; set; }
         public string Fødselsdag { get; set; }
-        public string Hårfarve { get; set; }   
+        public string Hårfarve { get; set; }
+        public string TextboxName { get; set; }
         
         public ContactpageRenderModel(IPublishedContent page)
         {
