@@ -1,0 +1,55 @@
+﻿@model Skole_Testsite.Models.FrontpageRenderModel
+@{
+    Layout = "Layout.cshtml";
+    // Bullshit
+    // More Bullshit
+    
+    //Admin user: admin, password: Test1234
+}
+
+@section scripts {
+    <script>
+      $(document).ready(function(){
+        $('.carousel').carousel();
+      });
+    </script>
+}
+
+@section postHeader {
+    <section class="slideshow">
+    <div id="main-carousel" class="carousel slide">
+        <div class="carousel-inner">
+
+        @{
+            var counter = 0;
+            foreach (var slide in Model.Slides)
+            {
+                <div class="item @(counter == 0?"active":string.Empty)">
+                    <img style="height:350px; width:1200px;" src="@slide.ImageUrl" alt="" />
+                    <div class="carousel-caption">
+                    <p>Caption text here</p>
+                    </div>
+                </div>
+                counter++;
+            }
+        }
+      </div>
+        <a class="carousel-control left" href="#main-carousel" data-slide="prev">&lsaquo;</a>
+        <a class="carousel-control right" href="#main-carousel" data-slide="next">&rsaquo;</a>
+    </div>
+</section>
+}
+
+<div class="frontpage-content">
+    <div class="left">
+    <h1>@Model.Header</h1>
+
+    @Model.Bodytext
+    </div>
+    <div class="right">
+
+        @Html.Partial("_CreateReviewUser", Model.CreateReviewUserForm)
+
+        <p>right content</p>
+    </div>
+</div>

@@ -1,0 +1,49 @@
+﻿@model Skole_Testsite.Models.MasterModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="/Content/Site.css" rel="stylesheet" />
+        <link href="/Content/Christian.css" rel="stylesheet" />
+        <link href="/Content/Sebastian.css" rel="stylesheet" />
+        <link href="/scripts/BootstrapCustomCarousel/css/bootstrap.css" rel="stylesheet" />
+    </head>
+    <body>
+        <header>
+            <div class="header-content">
+                <img style="height: 120px;" src="/Content/Img/bullshit_logo.jpg" />
+                <nav class="main-navigation">
+                    <ul>
+                        <li><a href="/">Forside</a></li>
+                        @foreach (var item in Model.MainNavigation)
+                        {
+                            <li><a href="@item.Url">@item.Name</a></li>
+                        }
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="page-wrapper">
+            @RenderSection("postHeader", false)
+            <section class="content">
+                @RenderBody()
+            </section>
+        </div>
+        <footer>
+            <p>footer!</p>
+        </footer>
+
+        <script src="/scripts/jquery-2.0.3.min.js"></script>
+        <script src="/scripts/jquery.validate.min.js"></script>
+        <script src="/scripts/jquery.validate.unobtrusive.min.js"></script>
+        <script src="/scripts/jquery.unobtrusive-ajax.min.js"></script>
+        <script src="/scripts/BootstrapCustomCarousel/js/bootstrap.min.js"></script>
+
+        @RenderSection("scripts", false)
+
+    </body>
+</html>
+

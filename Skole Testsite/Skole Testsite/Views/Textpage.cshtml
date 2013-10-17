@@ -1,0 +1,43 @@
+﻿@model Skole_Testsite.Models.TextpageRenderModel
+@{
+    Layout = "Layout.cshtml";
+}
+
+<h1>@Model.Header</h1>
+    <p class="s">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />
+    Etiam ligula enim, sagittis vulputate rhoncus ut, rutrum ut risus. <br />
+    Pellentesque sed nisi sed neque mattis blandit.<br />
+    Ut fringilla porta turpis, ac ornare lacus ornare quis.<br />
+    Cras semper nulla in elit ullamcorper molestie. Duis a velit risus.<br />
+    In euismod aliquet nibh, non sagittis metus venenatis ac.<br />
+    Maecenas erat odio, vulputate vel malesuada vitae, faucibus sed mi.<br />
+    Proin egestas, leo interdum euismod interdum, leo orci pulvinar felis, ut rhoncus velit neque vel odio.<br />
+    Aliquam ac risus eget erat semper tincidunt. Donec augue lorem, sagittis nec elit eu, ornare suscipit metus. <br />
+    Donec vehicula luctus vestibulum. <br />
+    </p>
+<p>
+    <p>@Model.BodyText <br /> </p>
+    <ol> 
+    @{
+        foreach (string s in Model.skills)// bullshity
+        {
+            <li>@s</li>
+        }    
+    
+    }
+    </ol></p>
+
+<h2>Customer Storys</h2>
+<p>    <ol> 
+    @{
+        int i =0;
+        foreach(string s in Model.CustomersStorys)
+        {
+            <li>@s <br /> <img src=@Model.CustomerPictures[i] height="80" width="66"/></li>
+            i ++;
+        }    
+    
+    }
+    </ol>
+</p>

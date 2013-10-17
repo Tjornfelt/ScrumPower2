@@ -1,0 +1,19 @@
+﻿@model Skole_Testsite.Models.ContactpageRenderModel
+@{
+    Layout = "Layout.cshtml";
+}
+
+<body>
+<h2>Indtast venligst dine kontaktoplysninger her:</h2>
+
+<p>@Model.Navn</p>
+<input type="text" name="Navn" size="40" maxlength="35">
+<p>@Model.Adresse</p>
+<input type="text" name="Adresse" size="40" maxlength="35">
+<p>@Model.Postnr</p> 
+<input type="text" name="Postnr" size="40" maxlength="35">
+<p>@Model.Fødselsdag</p>
+<input type="text" name="Fødselsdag" size="40" maxlength="35">
+<p>@Model.Hårfarve</p>
+<input type="text" name="Hårfave" size="40" maxlength="35">
+</body>

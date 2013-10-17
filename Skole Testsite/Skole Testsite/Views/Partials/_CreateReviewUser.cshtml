@@ -1,0 +1,14 @@
+﻿@model Skole_Testsite.Models.HelperModels.CreateReviewUserForm
+
+
+@using (Ajax.BeginForm("CreateUser", "UserActions",  new AjaxOptions {
+    HttpMethod = "POST",
+    OnComplete = "alert('complete!')"
+}))
+{
+    //TEST!
+    @Html.EditorFor(x => x.Username)
+    @Html.EditorFor(x => x.Password)
+
+    <input type="submit" value="opret" />
+}
